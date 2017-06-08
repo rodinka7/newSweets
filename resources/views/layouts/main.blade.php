@@ -28,30 +28,60 @@
 <body>
 	<div id="app">
 		<div class="container">
-			<div class="top-menu">
-				<nav class="top-menu__nav">
-					<ul class="top-menu__list">
-						<li><a href="">Войти</a></li>
-						<li><a href="">Регистрация</a></li>
-						<li><a href="">Выйти</a></li>
-					</ul>
-				</nav>
-				<div class="top-menu__right">
-					<div class="top-search">
-						<form action="">
-							<input type="text" >
-							<button>
-								<i class="fa fa-2x fa-search"></i>
-							</button>
-						</form>
-					</div>
-					<div class="top-cart">
-						<i class="fa fa-2x fa-shopping-cart"></i>
-						0 товаров
+			<header>
+				<div class="top-menu">
+					<nav class="top-menu__nav">
+						<ul class="top-menu__list">
+							<li><a href="">Войти</a></li>
+							<li><a href="">Регистрация</a></li>
+							<li><a href="">Выйти</a></li>
+						</ul>
+					</nav>
+					<div class="top-menu__right">
+						<div class="top-search">
+							<form action="">
+								<input type="text" >
+								<button>
+									<i class="fa fa-2x fa-search"></i>
+								</button>
+							</form>
+						</div>
+						<div class="top-cart">
+							<i class="fa fa-2x fa-shopping-cart"></i>
+							0 товаров
+						</div>
 					</div>
 				</div>
-			</div>
-			<img src="/img/logo.jpg" alt="Кондитерский магазин Ласощи" class="top-img">
+				<img src="/img/logonew.jpg" alt="Кондитерский магазин Ласощи" class="top-img">
+				<div class="menu-main">
+					<ul>
+						<li><a href="">Товары</a></li>
+						<li><a href="">Товары</a></li>
+						<li><a href="">Товары</a></li>
+						<li><a href="">Товары</a></li>
+						<li><a href="">Товары</a></li>
+						<li><a href="">Товары</a></li>
+					</ul>
+				</div>
+			</header>
+			<section class="content">
+				<section class="content-main">
+					<img src="/img/bgnew.jpg" alt="">
+					<div class="content-header">
+						<h2>Новогодние сладкие подарки</h2>
+						<h1>2018</h1>
+						<h3>Мы сделаем Вашу жизнь сладкой и изысканной</h3>
+						<a class="cart-link" href="">
+							<i class="fa fa-3x fa-shopping-cart"></i>
+						</a>
+					</div>
+				</section>
+			</section>
+			<section class="content">
+				<div class="content-banners">
+					
+				</div>
+			</section>
 		</div>
 	</div>
 </body>
