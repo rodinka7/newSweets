@@ -1,0 +1,137 @@
+.section-box {
+	margin: 30px auto;
+	width: 90%;
+}
+.breadcrumb {
+	padding: 7px 15px;
+	background: rgba(0,0,0,.1);
+	margin-bottom: 20px;
+}
+.breadcrumb li {
+	display: inline-block;
+}
+.breadcrumb li:after {
+	content: '/\00a0';
+	color: #cccccc;
+	padding: 0 10px;
+}
+
+.breadcrumb a {
+	color: #bcbcbc;
+	transition: .3s ease;
+}
+.breadcrumb a:hover {
+	color: #E74C3C;
+}
+.zoom-container {
+	width: 360px;
+	border: 1px solid #efefef;
+
+	float: left;
+}
+.zoom-container img {
+	max-width: 360px;
+}
+.section-left {
+	width: 350px;
+	float: left;
+
+	margin-left: 20px;
+
+	color: #3e454c;
+}
+.section-left-header h2 {
+	font: 28px 'open_sansbold', arial;
+}
+.product-info {
+	margin-bottom: 10px;
+}
+.product-info-1 {
+	color: #e74c3c;
+	font: 14px 'open_sansbold', arial;
+
+	margin-right: 10px;
+}
+.product-info-2 {
+	color: #2e3338;
+	font: 14px 'open_sansbold', arial;
+}
+.purchase {
+	font: 14px 'open_sansbold', arial;
+}
+.quentity-box {
+	display: inline-block;
+	margin: 10px 10px 0 0;
+}
+.quentity-box input {
+	width: 54px;
+	height: 24px;
+	display: block;
+	
+	border: 2px solid #efefef !important;
+	font-size: 15px;
+
+	text-align: center;
+}
+.quentity-box span {
+	width: 26px;
+	height: 24px;
+	
+	display: block;
+	float: left;
+	
+	border: 2px solid #efefef;
+	text-align: center;
+
+	cursor: pointer;
+
+	transition: .3s ease;
+}
+.quentity-box span i {
+	color: #BCBCBC;
+}
+.quentity-box span:hover i {
+	color: #E74C3C;
+}
+.quentity-btn {
+	padding: 11px 14px;
+	vertical-align: bottom;
+	
+	border: none;
+	background: #2e3338;
+	color: #fff;
+
+	cursor: pointer;
+
+	font: 12px 'open_sansbold', arial;
+	transition: .3s ease;
+}
+.quentity-btn:hover {
+	background: #E74C3C;
+}
+.section-right {
+	width: 270px;
+	border-left: 1px solid #efefef;
+	float: left;
+
+	padding-left: 20px;
+}
+.section-right-header h2 {
+	font: 22px 'open_sansregular',arial;
+	text-transform: uppercase;
+}
+table {
+	border-collapse: collapse;
+}
+th, td {
+	font: 12px 'open_sansregular',arial;
+
+	border: 2px solid #efefef;
+	color: #2e3338;
+	padding: 2px 15px;
+
+	text-align: center;
+}
+th {
+	font: 14px 'open_sansregular',arial;
+}

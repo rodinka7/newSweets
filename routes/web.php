@@ -14,3 +14,6 @@
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/catalog', 'ProductsController@catalogShow');
+Route::get('/product/{id}', 'ProductsController@productShow');

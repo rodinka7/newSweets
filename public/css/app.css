@@ -1,6 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
 @charset "UTF-8";
-
+body {
+	font-family: 'open-sanslight';
+}
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+a {
+	text-decoration: none;
+}
+.clearfix:before {
+	content: '';
+	display: block;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
 .container {
 	position: relative;
 }
@@ -11,12 +30,15 @@
 	left: 0;
 	z-index: 999;
 
-	background: rgba(61,59,59,.8);
+	background: rgba(231,76,60,.8);
 
 	width: 100%;
-	height: 45px;
+	height: 36px;
 
-	color: #777;
+	color: #fff;
+	text-transform: uppercase;
+
+	font: 12px 'open-sanslight', Arial;
 }
 .top-menu__nav {
 	display: inline-block;
@@ -29,13 +51,14 @@
 	margin-left: 20px;
 }
 .top-menu__list a {
-	color: #777;
+	color: #fff;
 	text-decoration: none;
 
 	transition: .5s ease-in-out;
+	font: 12px/36px 'open-sanslight', Arial;
 }
 .top-menu__list a:hover {
-	color: #E74C3C;
+	color: #cc1100;
 }
 .top-menu__right {
 	display: inline-block;
@@ -67,13 +90,13 @@
 	cursor: pointer;
 }
 .fa-search, .fa-shopping-cart {
-	color: #777;
+	color: #fff;
 	transition: .5s ease-in-out;
 
 	cursor: pointer;
 }
 .fa-search:hover, .fa-shopping-cart:hover {
-	color: #E74C3C;
+	color: #cc1100;
 }
 
 .top-cart {
@@ -97,6 +120,8 @@
 	color: #882e24;
 
 	position: relative;
+
+	text-transform: uppercase;
 }
 .menu-main:after {
 	content: '';
@@ -133,6 +158,7 @@
 	display: block;
 
 	transition: .5s ease-in-out;
+	font: 14px/80px 'open_sansbold', arial;
 }
 .menu-main a:hover {
 	color: #fff;
@@ -406,28 +432,10 @@
 	display: inline-block;
 	width: 20px;
 }
-.
 /* Четвертый контейнер */
 
 /* Пятый контейнер */
 
-.cart-link.green:after {
-	content: '';
-	display: inline-block;
-	width: 100%;
-	height: 100%;
-	border-radius: 50%;
-	background: rgba(127,157,48,1);
-	
-	position: absolute;
-	bottom: -100%;
-	left: 0;
-
-	transition: all .5s ease;
-}
-.cart-link:hover.cart-link.green:after {
-	bottom: 0;
-}
 /* Пятый контейнер */
 /* Шестой контейнер */
 .content-sixth {
@@ -438,20 +446,162 @@
 	font-size: 30px;
 	color: #464646;
 	border-bottom: 1px solid #f2f2f2;
+
+	margin-bottom: 20px;
 }
 .box-content {
-	text-align-last: justify;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	padding-bottom: 30px;
+	border-bottom: 1px solid #f2f2f2;
 }
 .box-product {
-	width: 20%;
-	display: inline-block;
+	width: 24%;
+	margin-bottom: 20px;
 }
 .box-image {
 	background: #FAFAFA;
+	margin-bottom: 10px;
+}
+.box-image-link {
+	display: block;
 	overflow: hidden;
 }
-.box-image img {
-	width: 250px;
+.box-img {
+	width: 230px;
+	transition: .3s ease;
 }
+.box-image-link:hover .box-img {
+	transform: scale(1.1);
+}
+.caption {
+	font-size: 16px;
+	color: #31353d;
+
+	margin-bottom: 30px;
+}
+.product-price {
+	margin-bottom: 15px;
+}
+.price-new {
+	color: #f15f43;
+	font-size: 25px;
+
+	margin-right: 10px;
+}
+.price-old {
+	color: #dadadb;
+	font-size: 15px;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+.product-name {
+	margin-bottom: 5px;
+}
+.product-name a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #31353d;
+}
+.product-desc {
+	color: #bcbcbc;
+	font-size: 12px;
+}
+.product-cart button {
+	width: 65px;
+	height: 65px;
+	
+	border: none;
+	border-radius: 50%;
+	line-height: 65px;
+	text-align-last: center;
+
+	cursor: pointer;
+}
+.product-btn-red {
+	background: #E74C3C;
+	transition: .3s ease-in-out;
+
+	margin-right: 20px;
+}
+.product-btn-red:hover {
+	background: #D43727;
+}
+.product-btn-black {
+	background: #323232;
+	transition: .3s ease-in-out;
+}
+.product-btn-black:hover {
+	background: #000000;
+}
+.product-btn-red i,.product-btn-black i {
+	color: #fff;
+	font-size: 25px;
+}
+.product-btn-red i:hover {
+	color: #fff;
+}
+
 /* Шестой контейнер */
+
+/* Седьмой контейнер - карта */
+.map-wrapper {
+	position: relative;
+}
+.map-container {
+	width: 100%;
+	height: 600px;
+}
+.map-contacts {
+	position: absolute;
+	top: 50%;
+	left: 10%;
+	
+	transform: translateY(-50%);
+	padding: 30px;
+	background: rgba(99,121,113,.5);
+	border-radius: 10px;
+	color: #fff;
+}
+.contacts-header {
+	text-transform: uppercase;
+}
+.contacts-box {
+	margin-bottom: 20px;
+}
+.contacts-box ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.contacts-box li {
+	margin-bottom: 20px;
+}
+.contacts-box i {
+	margin-right: 10px;
+}
+.contacts-footer {
+	font-size: 24px;
+	text-align: center;
+}
+/* Седьмой контейнер - карта */
 /* Контент */
+
+/* Футер */
+.footer {
+	width: 100%;
+	height: 50px;
+	background: #e74c3c;
+
+	line-height: 50px;
+}
+.footer>div {
+	font-size: 12px;
+	color: #fff;
+
+	float: right;
+	padding-right: 20px;
+}
+/* Футер */
