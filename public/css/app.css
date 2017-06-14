@@ -122,6 +122,9 @@ a {
 	position: relative;
 
 	text-transform: uppercase;
+	z-index: 999;
+
+	transition: .3s ease;
 }
 .menu-main:after {
 	content: '';

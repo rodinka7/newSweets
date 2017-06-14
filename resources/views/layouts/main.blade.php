@@ -59,14 +59,16 @@
 					</div>
 				</div>
 				<img src="/img/logonew.jpg" alt="Кондитерский магазин Ласощи" class="top-img">
-				<div class="menu-main">
-					<ul>
-						<li><a href="/">Главная</a></li>
-						<li><a href="/catalog">Каталог</a></li>
-						<li><a href="">Элитные подарки</a></li>
-						<li><a href="">Эконом-подарки</a></li>
-						<li><a href="/about">О магазине</a></li>
-					</ul>
+				<div class="main-menu__wrapper">
+					<div class="menu-main" id="menu-main">
+						<ul>
+							<li><a href="/">Главная</a></li>
+							<li><a href="/catalog">Каталог</a></li>
+							<li><a href="">Элитные подарки</a></li>
+							<li><a href="">Эконом-подарки</a></li>
+							<li><a href="/about">О магазине</a></li>
+						</ul>
+					</div>
 				</div>
 			</header>
 			<section class="container">
@@ -77,5 +79,6 @@
 			</footer>
 		</div>
 	</div>
+	<script src="/js/main.js"></script>
 </body>
 </html>

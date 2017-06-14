@@ -60,10 +60,50 @@
 	width: 300px;
 	display: block;
 }
-.input-wrapper {
-	width: 80%;
+.about-container {
+	margin-bottom: 10px;
 }
-#input-name {
+.about-label {
+	color: #31353d;
+	font: 14px 'open_sansregular',arial;
+	text-transform: uppercase;
+	display: inline;
+	vertical-align: middle;
+
+}
+.input-wrapper {
+	width: 88%;
+	float: right;
+}
+.about-input {
 	display: block;
 	width: 100%;
+	padding: 5px;
+}
+textarea.about-input {
+	resize: none;
+}
+.about-btn {
+	padding: 7px 10px;
+	color: #fff;
+	font: 12px 'open_sansregular',arial;
+
+	transition: .3s ease;
+	border: none;
+
+	cursor: pointer;
+}
+.about-submit,
+.about-clear:hover {
+	background: #2e3338;
+}
+.about-clear,
+.about-submit:hover {
+	background: #e74c3c;
+}
+.about-submit {
+	margin-right: 10px;
+}
+.about-btn-wrapper {
+	float: right;
 }

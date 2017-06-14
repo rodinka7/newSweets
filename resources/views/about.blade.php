@@ -137,6 +137,13 @@
 							<p>Наши менеджеры всегда на связи. Они готовы ответить на Ваши вопросы и в кратчайший срок отправить заказ</p>
 						</div>
 					</div>
+					<div class="about-left-content">
+						<span>04</span>
+						<div class="about-left-info">
+							<h3>Актуальный ассортимент</h3>
+							<p>В нашем магазине Вы найдете сладки подарки ко всем праздникам: к Новому Году, Дню Всех Влюбленных, 8-му Марта.</p>
+						</div>
+					</div>
 				</div>
 				<div class="about-right">
 					<div class="about-right-header">
@@ -161,15 +168,39 @@
 				<p>Оплата заказов производится по наличному и безналичному расчету. В день оплаты формируется заказ.</p>
 				<p>Доставка осуществляется курьерскими службами: Новая Почта, Деливери, Интайм и другими. Условия оплаты и доставки можно оговорить с менеджером и уточнить сроки доставки заказа.</p>
 			</div>
-			<div class="about-wrapper">
+			<div>
 				<div class="about-right-header">
 					<h3>Напишите нам</h3>
 				</div>
 					<form action="" method="post">
-						<div class="form-group required">
-							<label for="input-name">Ваше имя</label>
+						<div class="about-container clearfix">
+							<label for="input-name" class="about-label">Ваше имя</label>
 							<div class="input-wrapper">
-								<input type="text" id="input-name">
+								<input type="text" id="input-name" class="about-input">
+							</div>
+						</div>
+						<div class="about-container clearfix">
+							<label for="input-email" class="about-label">Ваш email</label>
+							<div class="input-wrapper">
+								<input type="text" id="input-email" class="about-input">
+							</div>
+						</div>
+						<div class="about-container clearfix">
+							<label for="input-phone" class="about-label">Телефон</label>
+							<div class="input-wrapper">
+								<input type="text" id="input-phone" class="about-input">
+							</div>
+						</div>
+						<div class="about-container clearfix">
+							<label for="input-message" class="about-label">Сообщение</label>
+							<div class="input-wrapper">
+								<textarea rows="10" id="input-textarea" class="about-input"></textarea>
+							</div>
+						</div>
+						<div class="clearfix">
+							<div class="about-btn-wrapper">
+								<button type="submit" class="about-btn about-submit">Отправить</button>
+								<button class="about-btn about-clear">Очистить</button>
 							</div>
 						</div>
 					</form>
