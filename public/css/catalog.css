@@ -104,6 +104,8 @@
 	font: 30px 'open_sanslight', arial;
 	color: #2e3338;
 	text-transform: uppercase;
+
+	margin-top: 0;
 }
 .catalog-filters, 
 .catalog-info {

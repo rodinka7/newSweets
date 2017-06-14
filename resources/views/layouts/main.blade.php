@@ -17,6 +17,7 @@
     <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/catalog.css">
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" type="text/css" href="/css/about.css">
 
     <!-- Scripts -->
     <script>
@@ -64,7 +65,7 @@
 						<li><a href="/catalog">Каталог</a></li>
 						<li><a href="">Элитные подарки</a></li>
 						<li><a href="">Эконом-подарки</a></li>
-						<li><a href="">О магазине</a></li>
+						<li><a href="/about">О магазине</a></li>
 					</ul>
 				</div>
 			</header>

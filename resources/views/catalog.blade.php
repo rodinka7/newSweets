@@ -1,6 +1,12 @@
 @extends('layouts.main')
 @section('content')
-<div class="clearfix">
+<div class="section-box clearfix">
+	<div class="breadcrumb">
+		<ul>
+			<li><a href="">Главная</a></li>
+			<li><a href="">Каталог</a></li>
+		</ul>
+	</div>
 	<section class="sidebar">
 		<div class="sidebar-header">
 			<h2>Популярные подарки</h2>
@@ -101,12 +107,6 @@
 		</div>
 	</section>
 	<section class="catalog">
-		<div class="breadcrumb">
-			<ul>
-				<li><a href="">Главная</a></li>
-				<li><a href="">Каталог</a></li>
-			</ul>
-		</div>
 		<div class="catalog-header">
 			<h2>Новогодние подарки</h2>
 		</div>

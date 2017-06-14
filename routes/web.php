@@ -17,3 +17,4 @@ Route::get('/', function () {
 
 Route::get('/catalog', 'ProductsController@catalogShow');
 Route::get('/product/{id}', 'ProductsController@productShow');
+Route::get('/about', 'ProductsController@aboutShow');
