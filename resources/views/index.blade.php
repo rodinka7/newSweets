@@ -2,7 +2,9 @@
 @section('content')
 <section class="content">
 	<section class="content-main">
-		<img src="/img/bgnew.jpg" alt="" alt class="top-img">
+		<div class="bg-img">
+			<img src="/img/bgnew.jpg" alt="" alt class="top-img js-img">
+		</div>
 		<div class="content-header">
 			<h2>Новогодние сладкие подарки</h2>
 			<h1>2018</h1>
