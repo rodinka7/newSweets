@@ -18,21 +18,21 @@ var moduleMain = (function(){
 			});
 		},
 		parralax: function(){
-			var bg = document.querySelector('.bg-img'),
-				img = document.querySelector('.js-img'),
+			var bg = document.querySelector('.bg-img');
+				/*img = document.querySelector('.js-img'),
 				height = img.height,
-				container = bg.parentElement;
+				container = bg.parentElement;*/
 
-			console.log(img);
+			/*console.log(img);
 			console.log(height);
 			console.log(container);
-			container.style.height = height + 'px';
+			container.style.height = height + 'px';*/
 			
 			window.addEventListener('scroll', function(){
 				var wScroll = document.body.scrollTop;
 
 
-				var	strafe = wScroll / 45,
+				var	strafe = wScroll / 15,
 					strafeAmount = - strafe + '%', 
 					transformString = `translate3D(0, ${strafeAmount}, 0)`;
 				

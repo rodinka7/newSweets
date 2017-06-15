@@ -174,10 +174,12 @@ a {
 .content-main {
 	position: relative;	
 	overflow: hidden;
+	height: 750px;
 }
 .bg-img {
 	width: 100%;
 	position: absolute;
+	height: 1225px;
 	top: 0;
 	left: 0;
 	bottom: 0;
