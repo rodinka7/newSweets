@@ -2,20 +2,19 @@
 @section('content')
 <section class="content">
 	<section class="content-main">
-		<div class="bg-img">
-			<img src="/img/bgnew.jpg" alt="" alt class="top-img js-img">
-		</div>
-		<div class="content-header">
-			<h2>Новогодние сладкие подарки</h2>
-			<h1>2018</h1>
-			<h3>Мы сделаем Вашу жизнь сладкой и изысканной</h3>
+		<div class="content-bg-1 js-bg-1">
+			<div class="content-header js-header-1">
+				<h2>Новогодние сладкие подарки</h2>
+				<h1>2018</h1>
+				<h3>Мы сделаем Вашу жизнь сладкой и изысканной</h3>
+			</div>
 			<a class="cart-link red" href="">
-				<i class="fa fa-3x fa-shopping-cart"></i>
+				<i class="fa fa-3x fa-shopping-cart header-i"></i>
 			</a>
 		</div>
 	</section>
 </section>
-<section class="content">
+<section class="content js-content-1">
 	<div class="content-second">
 		<div class="content-box">
 			<div class="banner">
@@ -66,19 +65,20 @@
 	</div>
 </section>
 <section class="content">
-	<div class="content-main">
-		<img src="/img/candynew.jpg" alt="" class="top-img">
-		<div class="content-header">
-			<h2>Новогодние сладкие подарки</h2>
-			<h1>2018</h1>
-			<h3>Мы сделаем Вашу жизнь сладкой и изысканной</h3>
+	<section class="content-main">
+		<div class="content-bg-2 js-bg-2">
+			<div class="content-header js-header-2">
+				<h2>Новогодние сладкие подарки</h2>
+				<h1>2018</h1>
+				<h3>Мы сделаем Вашу жизнь сладкой и изысканной</h3>
+			</div>
 			<a class="cart-link violet" href="">
-				<i class="fa fa-3x fa-shopping-cart"></i>
+				<i class="fa fa-3x fa-shopping-cart header-i"></i>
 			</a>
 		</div>
-	</div>
+	</section>
 </section>
-<section class="content">
+<section class="content js-container-2">
 	<div class="content-fourth">
 		<div class="content-box">
 			<div class="banner">
@@ -127,19 +127,20 @@
 	</div>
 </section>
 <section class="content">
-	<div class="content-main">
-		<img src="/img/giftnew.jpg" alt="" class="top-img">
-		<div class="content-header">
-			<h2>Новогодние сладкие подарки</h2>
-			<h1>2018</h1>
-			<h3>Мы сделаем Вашу жизнь сладкой и изысканной</h3>
+	<section class="content-main">
+		<div class="content-bg-3">
+			<div class="content-header js-header-3">
+				<h2>Новогодние сладкие подарки</h2>
+				<h1>2018</h1>
+				<h3>Мы сделаем Вашу жизнь сладкой и изысканной</h3>
+			</div>
 			<a class="cart-link red" href="">
-				<i class="fa fa-3x fa-shopping-cart"></i>
+				<i class="fa fa-3x fa-shopping-cart header-i"></i>
 			</a>
 		</div>
-	</div>
+	</section>
 </section>
-<section class="content">
+<section class="content js-container-3">
 	<div class="content-sixth">
 		<div class="box-heading">
 			<h2>Наши сладкие подарки</h2>

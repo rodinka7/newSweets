@@ -103,13 +103,17 @@ a {
 	display: inline-block;
 }
 .top-img {
-	width: 100%;
-
+	max-width: 100%;
 	display: block;
 } 
 /* Верхнее меню */
 
 /* Главное меню */
+.menu-main__static {
+	width: 100%;
+	height: 80px;
+	background: linear-gradient(to top, #E74C3C, #E54919);
+}
 .menu-main {
 	background: linear-gradient(to top, #E74C3C, #E54919);
 	
@@ -174,56 +178,73 @@ a {
 .content-main {
 	position: relative;	
 	overflow: hidden;
-	height: 750px;
 }
-.bg-img {
-	width: 100%;
-	position: absolute;
-	height: 1225px;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
+.content-bg-1 {
+	min-height: 600px;
+	background-image: url('../img/bgnew.jpg');
+	background-size: cover;
+	background-position: 0 70%;
+	background-repeat: no-repeat;
+}
+.content-bg-2 {
+	min-height: 600px;
+	background-image: url('../img/candynew.jpg');
+	background-size: cover;
+	background-position: 0 70%;
+	background-repeat: no-repeat;
+}
+.content-bg-3 {
+	min-height: 600px;
+	background-image: url('../img/giftnew.jpg');
+	background-size: cover;
+	background-position: 0 70%;
+	background-repeat: no-repeat;
 }
 .content-header {
 	position: absolute;
-	top: 4%;
-	left: 50%;
-
-	transform: translateX(-50%);
+	top: 25%;
+	left: 0;
 
 	text-align: center;
+	width: 100%;
 }
 .content-header h2 {
 	color: #f2e85c;
 	text-transform: uppercase;
 
-	font-size: 60px;
-	font-weight: 300;
+	font: 60px 'open_sansregular', arial;
+	margin: 0;
 }
 .content-header h1 {
 	color: #fff;
-	font-size: 160px;
-	font-weight: 300;
+	font: 160px 'open_sansregular', arial;
+	margin: 0;
 }
 .content-header h3 {
 	text-transform: uppercase;
 	color: #ada8a5;
+	margin: 0;
+	font: 30px 'open_sansregular', arial;
 }
 .cart-link {
-	display: inline-block;
-	width: 225px;
-	height: 225px;
+	display: block;
+	width: 230px;
+	height: 230px;
 	border-radius: 50%;
 	background: #f2e85c;
 
-	position: relative;
-	line-height: 1.5em;
+	position: absolute;
+	bottom: -115px;
+	left: 50%;
+
+	transform: translateX(-50%);
+	line-height: 130px;
+	text-align: center;
 }
 
 .cart-link.red:after {
 	content: '';
-	display: inline-block;
+	display: block;
 	width: 100%;
 	height: 100%;
 	border-radius: 50%;
@@ -238,14 +259,12 @@ a {
 .cart-link:hover.cart-link.red:after {
 	bottom: 0;
 }
-.content-header i {
+.header-i {
 	color: #fff;
-	
-	margin-top: 20%;
-	z-index: 2;
+	z-index: 3;
 	position: relative;
 }
-.content-header i:hover {
+.header-i:hover {
 	color: #fff;
 }
 /* Первый контейнер */

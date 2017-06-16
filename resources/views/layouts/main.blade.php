@@ -59,8 +59,8 @@
 					</div>
 				</div>
 				<img src="/img/logonew.jpg" alt="Кондитерский магазин Ласощи" class="top-img">
-				<div class="main-menu__wrapper">
-					<div class="menu-main" id="menu-main">
+				<div class="menu-main__static">
+					<div class="menu-main">
 						<ul>
 							<li><a href="/">Главная</a></li>
 							<li><a href="/catalog">Каталог</a></li>
