@@ -305,6 +305,20 @@ a {
 
 	display: inline-block;
 }
+.js-banner {
+	opacity: 0;
+	transition: .7s ease-in-out;
+}
+.js-banner-left {
+	transform: translateX(-1000px);
+	transition: 1s linear;
+	opacity: 0;
+}
+.js-banner-right {
+	transform: translateX(1000px);
+	transition: 1s linear;
+	opacity: 0;
+}
 .banner-link {
 	overflow: hidden;
 	border-radius: 50%;
@@ -469,6 +483,10 @@ a {
 
 /* Пятый контейнер */
 /* Шестой контейнер */
+.js-products {
+	opacity: 0;
+	transition: .5s linear;
+}
 .content-sixth {
 	width: 90%;
 	margin: auto;

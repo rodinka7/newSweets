@@ -63,9 +63,64 @@ var moduleMain = (function(){
 				header.style.transform = transformString;
 				bg.style.backgroundPosition = bgPos;
 			});
+		},
+
+		showItems: function(){
+			var bg = document.querySelector('.js-bg-1'),
+				top = bg.getBoundingClientRect().top + 200,
+				bannersLeft = document.querySelectorAll('.js-banner-left'),
+				bannersRight = document.querySelectorAll('.js-banner-right');
+
+			window.addEventListener('scroll', function(){
+				var scrolled = document.body.scrollTop;
+
+				if (scrolled >= top) {
+					bannersLeft.forEach(function(item){
+						item.style.transform = `translateX(0)`;
+						item.style.opacity = 1;
+					});
+					bannersRight.forEach(function(item){
+						item.style.transform = `translateX(0)`;
+						item.style.opacity = 1;
+					});
+				}
+			});
+		},
+
+		showBanners: function(){
+			var bg = document.querySelector('.js-bg-2'),
+				top = bg.getBoundingClientRect().top + 200,
+				banners = document.querySelectorAll('.js-banner');
+
+			window.addEventListener('scroll', function(){
+				var scrolled = document.body.scrollTop;
+
+				if (scrolled >= top) {
+					banners.forEach(function(item){
+						item.style.opacity = 1;
+					});
+				}
+			});
+		},
+
+		showProducts: function(){
+			var bg = document.querySelector('.js-bg-3'),
+				top = bg.getBoundingClientRect().top + 200,
+				products = document.querySelector('.js-products');
+
+			window.addEventListener('scroll', function(){
+				var scrolled = document.body.scrollTop;
+
+				if (scrolled >= top) {
+					products.style.opacity = 1;
+				}
+			});
 		}
+
 	}
 })();
 
 moduleMain.showMenu();
-moduleMain.parralax();
+moduleMain.showItems();
+moduleMain.showBanners();
+moduleMain.showProducts();

@@ -17,7 +17,7 @@
 <section class="content js-content-1">
 	<div class="content-second">
 		<div class="content-box">
-			<div class="banner">
+			<div class="banner js-banner-left">
 				<a class="banner-link yellow" href="">
 					<img src="/img/presents/1.png" alt="">
 					<div class="banner-desc">
@@ -28,7 +28,7 @@
 					<i class="fa fa-2x fa-shopping-cart"></i>
 				</a>
 			</div>
-			<div class="banner">
+			<div class="banner js-banner-left">
 				<a class="banner-link red" href="">
 					<img src="/img/presents/10.png" alt="">
 					<div class="banner-desc">
@@ -39,7 +39,7 @@
 					<i class="fa fa-2x fa-shopping-cart"></i>
 				</a>
 			</div>
-			<div class="banner">
+			<div class="banner js-banner-right">
 				<a class="banner-link green" href="">
 					<img src="/img/presents/12.png" alt="">
 					<div class="banner-desc">
@@ -50,7 +50,7 @@
 					<i class="fa fa-2x fa-shopping-cart"></i>
 				</a>
 			</div>
-			<div class="banner">
+			<div class="banner js-banner-right">
 				<a class="banner-link violet" href="">
 					<img src="/img/presents/17.png" alt="">
 					<div class="banner-desc">
@@ -81,7 +81,7 @@
 <section class="content js-container-2">
 	<div class="content-fourth">
 		<div class="content-box">
-			<div class="banner">
+			<div class="banner js-banner">
 				<a class="banner-link fourth" href="">
 					<span>
 						<i class="fa fa-5x fa-star"></i>
@@ -95,7 +95,7 @@
 					<img src="/img/arr-banner.png" alt="">
 				</a>
 			</div>
-			<div class="banner">
+			<div class="banner js-banner">
 				<a class="banner-link fourth" href="">
 					<span>
 						<i class="fa fa-5x fa-truck"></i>
@@ -109,7 +109,7 @@
 					<img src="/img/arr-banner.png" alt="">
 				</a>
 			</div>
-			<div class="banner">
+			<div class="banner js-banner">
 				<a class="banner-link fourth" href="">
 					<span>
 						<i class="fa fa-5x fa-phone-square"></i>
@@ -128,7 +128,7 @@
 </section>
 <section class="content">
 	<section class="content-main">
-		<div class="content-bg-3">
+		<div class="content-bg-3 js-bg-3">
 			<div class="content-header js-header-3">
 				<h2>Новогодние сладкие подарки</h2>
 				<h1>2018</h1>
@@ -145,7 +145,7 @@
 		<div class="box-heading">
 			<h2>Наши сладкие подарки</h2>
 		</div>
-		<div class="box-content">
+		<div class="box-content js-products">
 			<div class="box-product">
 				<div class="box-image">
 					<a class="box-image-link" href="">
