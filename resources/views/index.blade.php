@@ -24,9 +24,11 @@
 						<h3>Подарки в элитной упаковке</h3>
 					</div>
 				</a>
-				<a class="cart-box" href="">
-					<i class="fa fa-2x fa-shopping-cart"></i>
-				</a>
+				<div class="cart-wrapper">
+					<a class="cart-box" href="">
+						<i class="fa fa-2x fa-shopping-cart"></i>
+					</a>
+				</div>
 			</div>
 			<div class="banner js-banner-left">
 				<a class="banner-link red" href="">
@@ -35,9 +37,11 @@
 						<h3>Подарки в стандартной упаковке</h3>
 					</div>
 				</a>
-				<a class="cart-box" href="">
-					<i class="fa fa-2x fa-shopping-cart"></i>
-				</a>
+				<div class="cart-wrapper">
+					<a class="cart-box" href="">
+						<i class="fa fa-2x fa-shopping-cart"></i>
+					</a>
+				</div>
 			</div>
 			<div class="banner js-banner-right">
 				<a class="banner-link green" href="">
@@ -46,9 +50,11 @@
 						<h3>Подарки весом до 1кг</h3>
 					</div>
 				</a>
-				<a class="cart-box" href="">
-					<i class="fa fa-2x fa-shopping-cart"></i>
-				</a>
+				<div class="cart-wrapper">
+					<a class="cart-box" href="">
+						<i class="fa fa-2x fa-shopping-cart"></i>
+					</a>
+				</div>
 			</div>
 			<div class="banner js-banner-right">
 				<a class="banner-link violet" href="">
@@ -57,9 +63,11 @@
 						<h3>Подарки весом больше 1кг</h3>
 					</div>
 				</a>
-				<a class="cart-box" href="">
-					<i class="fa fa-2x fa-shopping-cart"></i>
-				</a>
+				<div class="cart-wrapper">
+					<a class="cart-box" href="">
+						<i class="fa fa-2x fa-shopping-cart"></i>
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -91,9 +99,11 @@
 						<h4>и оптовым покупателям</h4>
 					</div>
 				</a>
-				<a class="cart-box fourth" href="">
-					<img src="/img/arr-banner.png" alt="">
-				</a>
+				<div class="cart-wrapper">
+					<a class="cart-box fourth" href="">
+						<img src="/img/arr-banner.png" alt="">
+					</a>
+				</div>
 			</div>
 			<div class="banner js-banner">
 				<a class="banner-link fourth" href="">
@@ -105,9 +115,11 @@
 						<h4>по Украине</h4>
 					</div>
 				</a>
-				<a class="cart-box fourth" href="">
-					<img src="/img/arr-banner.png" alt="">
-				</a>
+				<div class="cart-wrapper">
+					<a class="cart-box fourth" href="">
+						<img src="/img/arr-banner.png" alt="">
+					</a>
+				</div>
 			</div>
 			<div class="banner js-banner">
 				<a class="banner-link fourth" href="">
@@ -119,9 +131,11 @@
 						<h4>с 8.00 до 22.00</h4>
 					</div>
 				</a>
-				<a class="cart-box fourth" href="">
-					<img src="/img/arr-banner.png" alt="">
-				</a>
+				<div class="cart-wrapper">
+					<a class="cart-box fourth" href="">
+						<img src="/img/arr-banner.png" alt="">
+					</a>
+				</div>
 			</div>
 		</div>
 	</div>
