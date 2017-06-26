@@ -115,6 +115,39 @@ var moduleMain = (function(){
 					products.style.opacity = 1;
 				}
 			});
+		},
+
+		showArrow: function(){
+			var bg = document.querySelector('.js-bg-1'),
+				top = bg.getBoundingClientRect().top,
+				arrow = document.querySelector('.js-arrow');
+
+			window.addEventListener('scroll', function(){
+				var scrolled = document.body.scrollTop;
+
+				if (scrolled >= top) {
+					arrow.style.opacity = 1;
+				} else {
+					arrow.style.opacity = 0;
+				}
+			})
+		},
+
+		arrowTop: function(){
+			var arrow = document.querySelector('.js-arrow');
+
+			arrow.addEventListener('click', function(e){
+				e.preventDefault();
+				var scrolled = document.body.scrollTop;
+
+				while (scrolled > 0) {
+					var timer = setInterval(function(){
+						document.body.scrollTop = scrolled - 100;
+					},5000);
+				}
+
+				clearInterval(timer);
+			});
 		}
 
 	}
@@ -124,3 +157,5 @@ moduleMain.showMenu();
 moduleMain.showItems();
 moduleMain.showBanners();
 moduleMain.showProducts();
+moduleMain.showArrow();
+moduleMain.arrowTop();

@@ -71,6 +71,9 @@
 					</div>
 				</div>
 			</header>
+			<section class="arrow-wrapper js-arrow">
+				<a href="#" class="arrow-top"></a>
+			</section>
 			<section class="container">
 				@yield('content')
 			</section>

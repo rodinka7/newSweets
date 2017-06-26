@@ -171,7 +171,36 @@ a {
 	color: #fff;
 }
 /* Главное меню */
+/* Стрелка */
+.arrow-wrapper {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
 
+	width: 40px;
+	height: 40px;
+
+	z-index: 9999;
+
+	opacity: 0;
+	transition: .3s ease-in-out;
+}
+.arrow-top {
+	display: block;
+	height: 100%;
+}
+.arrow-top:after {
+    color: #5b6167;
+    content: "\f01b";
+    font-family: 'FontAwesome';
+    font-size: 40px;
+
+    transition: .3s ease-in-out;
+}
+.arrow-top:hover.arrow-top:after {
+	color: #e74c3c;
+}
+/* Стрелка */
 /* Контент */
 
 /* Первый контейнер */
