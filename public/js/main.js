@@ -106,13 +106,15 @@ var moduleMain = (function(){
 		showProducts: function(){
 			var bg = document.querySelector('.js-bg-3'),
 				top = bg.getBoundingClientRect().top + 200,
-				products = document.querySelector('.js-products');
+				products = document.querySelectorAll('.js-product');
 
 			window.addEventListener('scroll', function(){
 				var scrolled = document.body.scrollTop;
 
 				if (scrolled >= top) {
-					products.style.opacity = 1;
+					products.forEach(function(item){
+						item.style.opacity = 1;
+					})
 				}
 			});
 		},
@@ -140,14 +142,22 @@ var moduleMain = (function(){
 				e.preventDefault();
 				var scrolled = document.body.scrollTop;
 
-				while (scrolled > 0) {
-					var timer = setInterval(function(){
-						document.body.scrollTop = scrolled - 100;
-					},5000);
-				}
-
-				clearInterval(timer);
+				var timer = setInterval(function(){
+					if (scrolled > 0) {
+						scrolled -= 50;
+						document.body.scrollTop = scrolled;
+					} else {
+						clearInterval(timer);
+					}
+				}, 10);
 			});
+		},
+
+		slider: function() {
+			var sliderUp = document.querySelector('.js-slider-up'),
+				sliderDown = document.querySelector('.js-slider-down'),
+				prevBtn = document.querySelector('.product-prev'),
+				nextBtn = document.querySelector('.product-next');
 		}
 
 	}
@@ -159,3 +169,4 @@ moduleMain.showBanners();
 moduleMain.showProducts();
 moduleMain.showArrow();
 moduleMain.arrowTop();
+moduleMain.slider();

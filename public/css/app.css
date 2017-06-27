@@ -22,6 +22,7 @@ a {
 }
 .container {
 	position: relative;
+	overflow: hidden;
 }
 /* Верхнее меню */
 .top-menu {
@@ -530,35 +531,35 @@ a {
 
 /* Пятый контейнер */
 /* Шестой контейнер */
-.js-products {
-	opacity: 0;
-	transition: .7s ease-out;
-}
 .content-sixth {
 	width: 90%;
 	margin: auto;
+}
+.js-product {
+	opacity: 0;
+	transition: .7s ease-out;
 }
 .box-heading {
 	font-size: 30px;
 	color: #464646;
 	border-bottom: 1px solid #f2f2f2;
-
-	margin-bottom: 20px;
+}
+.slider {
+	overflow: hidden;
 }
 .box-content {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-
-	padding-bottom: 30px;
+	padding: 20px 0 30px;
 	border-bottom: 1px solid #f2f2f2;
+	width: 200%;
 }
 .box-product {
-	width: 24%;
-	margin-bottom: 20px;
+	display: inline-block;
+	width: 220px;
+	margin: 0 20px 20px 0;
+
+	overflow: hidden;
 }
 .box-image {
-	background: #FAFAFA;
 	margin-bottom: 10px;
 }
 .box-image-link {
@@ -566,7 +567,7 @@ a {
 	overflow: hidden;
 }
 .box-img {
-	width: 230px;
+	width: 220px;
 	transition: .3s ease;
 }
 .box-image-link:hover .box-img {
@@ -639,7 +640,43 @@ a {
 .product-btn-red i:hover {
 	color: #fff;
 }
+.box-controls {
+	margin-top: -15px;
+}
+.product-prev, .product-next {
+	display: block;
+	width: 30px;
+	height: 30px;
 
+	background: #e74c3c;
+	text-align: center;
+
+	position: relative;
+	z-index: 999;
+
+	transition: .3s linear;
+}
+.product-prev:hover, .product-next:hover {
+	background: #2e3338;
+}
+.product-prev {
+	float: left;
+}
+.product-next {
+	float: right;
+}
+.product-prev:before {
+	font: 17px/30px 'FontAwesome';
+    color: #fff;
+
+    content: '\f104';
+}
+.product-next:before {
+	font: 17px/30px 'FontAwesome';
+    color: #fff;
+
+    content: '\f105';
+}
 /* Шестой контейнер */
 
 /* Седьмой контейнер - карта */

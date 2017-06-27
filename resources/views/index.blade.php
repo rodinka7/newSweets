@@ -159,173 +159,349 @@
 		<div class="box-heading">
 			<h2>Наши сладкие подарки</h2>
 		</div>
-		<div class="box-content js-products">
-			<div class="box-product">
-				<div class="box-image">
-					<a class="box-image-link" href="">
-						<img class="box-img" src="/img/presents/11.png" alt="">	
-					</a>
-				</div>
-				<div class="caption">
-					<div class="product-price">
-						<span class="price-new">68 грн</span> 
-						<span class="price-old">74 грн</span>
+		<div class="slider">
+			<div class="box-content js-slider-up">
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
 					</div>
-					<div class="product-name">
-						<a href="">Подарок Паровозик</a>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
 					</div>
-					<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
 				</div>
-				<div class="product-cart">
-					<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
-					<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
 				</div>
 			</div>
-			<div class="box-product">
-				<div class="box-image">
-					<a class="box-image-link" href="">
-						<img class="box-img" src="/img/presents/11.png" alt="">	
-					</a>
-				</div>
-				<div class="caption">
-					<div class="product-price">
-						<span class="price-new">68 грн</span> 
-						<span class="price-old">74 грн</span>
-					</div>
-					<div class="product-name">
-						<a href="">Подарок Паровозик</a>
-					</div>
-					<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
-				</div>
-				<div class="product-cart">
-					<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
-					<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
-				</div>
+			<div class="box-controls clearfix">
+				<a href="" class="product-prev"></a>
+				<a href="" class="product-next"></a>
 			</div>
-			<div class="box-product">
-				<div class="box-image">
-					<a class="box-image-link" href="">
-						<img class="box-img" src="/img/presents/11.png" alt="">	
-					</a>
-				</div>
-				<div class="caption">
-					<div class="product-price">
-						<span class="price-new">68 грн</span> 
-						<span class="price-old">74 грн</span>
+			<div class="box-content js-slider-down">
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
 					</div>
-					<div class="product-name">
-						<a href="">Подарок Паровозик</a>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
 					</div>
-					<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
-				</div>
-				<div class="product-cart">
-					<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
-					<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
-				</div>
-			</div>
-			<div class="box-product">
-				<div class="box-image">
-					<a class="box-image-link" href="">
-						<img class="box-img" src="/img/presents/11.png" alt="">	
-					</a>
-				</div>
-				<div class="caption">
-					<div class="product-price">
-						<span class="price-new">68 грн</span> 
-						<span class="price-old">74 грн</span>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
 					</div>
-					<div class="product-name">
-						<a href="">Подарок Паровозик</a>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
 					</div>
-					<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
-				</div>
-				<div class="product-cart">
-					<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
-					<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
-				</div>
-			</div>
-			<div class="box-product">
-				<div class="box-image">
-					<a class="box-image-link" href="">
-						<img class="box-img" src="/img/presents/11.png" alt="">	
-					</a>
-				</div>
-				<div class="caption">
-					<div class="product-price">
-						<span class="price-new">68 грн</span> 
-						<span class="price-old">74 грн</span>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
 					</div>
-					<div class="product-name">
-						<a href="">Подарок Паровозик</a>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
 					</div>
-					<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
 				</div>
-				<div class="product-cart">
-					<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
-					<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
-				</div>
-			</div>
-			<div class="box-product">
-				<div class="box-image">
-					<a class="box-image-link" href="">
-						<img class="box-img" src="/img/presents/11.png" alt="">	
-					</a>
-				</div>
-				<div class="caption">
-					<div class="product-price">
-						<span class="price-new">68 грн</span> 
-						<span class="price-old">74 грн</span>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
 					</div>
-					<div class="product-name">
-						<a href="">Подарок Паровозик</a>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
 					</div>
-					<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
-				</div>
-				<div class="product-cart">
-					<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
-					<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
-				</div>
-			</div>
-			<div class="box-product">
-				<div class="box-image">
-					<a class="box-image-link" href="">
-						<img class="box-img" src="/img/presents/11.png" alt="">	
-					</a>
-				</div>
-				<div class="caption">
-					<div class="product-price">
-						<span class="price-new">68 грн</span> 
-						<span class="price-old">74 грн</span>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
 					</div>
-					<div class="product-name">
-						<a href="">Подарок Паровозик</a>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
 					</div>
-					<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
-				</div>
-				<div class="product-cart">
-					<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
-					<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
-				</div>
-			</div>
-			<div class="box-product">
-				<div class="box-image">
-					<a class="box-image-link" href="">
-						<img class="box-img" src="/img/presents/11.png" alt="">	
-					</a>
-				</div>
-				<div class="caption">
-					<div class="product-price">
-						<span class="price-new">68 грн</span> 
-						<span class="price-old">74 грн</span>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
 					</div>
-					<div class="product-name">
-						<a href="">Подарок Паровозик</a>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
 					</div>
-					<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
 				</div>
-				<div class="product-cart">
-					<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
-					<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
 				</div>
 			</div>
 		</div>

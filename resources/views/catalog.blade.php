@@ -137,6 +137,15 @@
 							<option value="">до 1.5 кг</option>
 						</select>
 					</label>
+					<label for="">
+						Выберите стоимость:
+						<select name="" id="">
+							<option value="">все товары</option>
+							<option value="">до 50 грн</option>
+							<option value="">до 100 грн</option>
+							<option value="">до 150 грн</option>
+						</select>
+					</label>
 				</div>
 				<div class="catalog-items">
 					<div class="box-product">
