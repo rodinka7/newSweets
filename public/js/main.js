@@ -157,7 +157,14 @@ var moduleMain = (function(){
 			var sliderUp = document.querySelector('.js-slider-up'),
 				sliderDown = document.querySelector('.js-slider-down'),
 				prevBtn = document.querySelector('.product-prev'),
-				nextBtn = document.querySelector('.product-next');
+				nextBtn = document.querySelector('.product-next'),
+				slides = document.querySelectorAll('.js-product'),
+				slideWidth = slides[0].offsetWidth,
+				slidesLength = slides.length;
+			
+			prevBtn.addEventListener('click', function(e){
+				
+			});
 		}
 
 	}
