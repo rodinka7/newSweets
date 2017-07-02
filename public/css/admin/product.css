@@ -1,0 +1,17 @@
+.section-left-header input {
+	margin-bottom: 20px;
+
+	font: 18px 'open_sansbold', arial;
+}
+.price-new input {
+	font: 16px 'open_sanslight', arial;
+}
+.section-right table {
+	margin-bottom: 20px;
+}
+.create-label {
+	font: 12px 'open_sanslight',arial;
+	text-transform: uppercase;
+
+	margin-bottom: 20px;
+}

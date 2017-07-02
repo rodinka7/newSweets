@@ -15,6 +15,15 @@ Route::get('/', function () {
     return view('index');
 });
 
-Route::get('/catalog', 'ProductsController@catalogShow');
-Route::get('/product/{id}', 'ProductsController@productShow');
-Route::get('/about', 'ProductsController@aboutShow');
+Route::get('/catalog', 'ProductsController@storeCatalog');
+Route::get('/product/{id}', 'ProductsController@storeProduct');
+Route::get('/about', 'ProductsController@storeAbout');
+
+Auth::routes();
+
+Route:: prefix('/admin')->group(function(){
+	Route::get('/create/product', 'AdminController@storeProduct');
+	Route::post('/create/product', 'AdminController@createProduct');
+});
+
+Route::get('/home', 'HomeController@index')->name('home');
