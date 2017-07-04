@@ -22,9 +22,9 @@ a {
 }
 .container {
 	position: relative;
+
 	overflow: hidden;
 }
-
 /* Верхнее меню */
 .top-menu {
 	position: absolute;
@@ -97,7 +97,7 @@ a {
 
 	cursor: pointer;
 }
-.fa-search:hover {
+.fa-search:hover, .fa-shopping-cart:hover {
 	color: #cc1100;
 }
 
@@ -475,7 +475,6 @@ a {
 	left: 0;
 }
 /* Второй контейнер */
-
 /* Третий контейнер */
 .cart-link.violet:after {
 	content: '';
@@ -526,6 +525,9 @@ a {
 	text-transform: uppercase;
 	color: #31353d;
 }
+.cart-box.fourth {
+	line-height: 105px;
+}
 .cart-box.fourth img{
 	display: inline-block;
 	width: 20px;
@@ -540,29 +542,10 @@ a {
 	width: 90%;
 	margin: auto;
 }
-.js-product {
-	opacity: 0;
-	transition: .7s ease-out;
-}
 .box-heading {
 	font-size: 30px;
 	color: #464646;
 	border-bottom: 1px solid #f2f2f2;
-}
-.slider {
-	overflow: hidden;
-}
-.box-content {
-	padding: 20px 0 30px;
-	border-bottom: 1px solid #f2f2f2;
-	width: 200%;
-}
-.box-product {
-	display: inline-block;
-	width: 220px;
-	margin: 0 20px 20px 0;
-
-	overflow: hidden;
 }
 .box-content {
 	display: flex;
@@ -576,6 +559,7 @@ a {
 	padding: 0 20px;
 }
 .box-image {
+	background: #FAFAFA;
 	margin-bottom: 10px;
 }
 .box-image-link {
@@ -659,10 +643,6 @@ a {
 .product-btn-red i:hover {
 	color: #fff;
 }
-.box-controls {
-	margin-top: -15px;
-}
-
 .product-prev, .product-next {
 	display: block;
 	width: 30px;

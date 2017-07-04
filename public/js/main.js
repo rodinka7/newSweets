@@ -159,7 +159,13 @@ var moduleMain = (function(){
 				sliderDown = document.querySelector('.js-slider-down'),
 				prevBtn = document.querySelector('.product-prev'),
 				nextBtn = document.querySelector('.product-next'),
-				slides = document.querySelectorAll('.js-product');
+				slides = document.querySelectorAll('.js-product'),
+				length = Array.apply(null, slides).length / 2,
+				slideWidth = slides[0].offsetWidth,
+				sliderPosUp = 0,
+				sliderPosDown = 0,
+				numUp = 0,
+				numDown = length - 1;
 
 			prevBtn.addEventListener('click', function(e){
 				e.preventDefault();
@@ -242,8 +248,16 @@ var moduleMain = (function(){
 					numDown = 0;
 				}
 			});
-		}
+		},
 
+		zoomLense: function(){
+			
+			var zoomContainer = document.querySelector('.zoom-container'),
+				imgSrc = zoomContainer.firstElementChild.attribute('src');
+
+			console.log(zoomContainer);
+			console.log(imgSrc);
+		}
 	}
 })();
 
@@ -255,3 +269,4 @@ moduleMain.showProducts();
 moduleMain.showArrow();
 moduleMain.arrowTop();
 moduleMain.slider();
+moduleMain.zoomLense();

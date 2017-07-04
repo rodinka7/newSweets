@@ -14,27 +14,41 @@ var adminModule = (function(){
 			btn.addEventListener('click', function(e){
 				e.preventDefault();
 
-				var producerVal = producer.value,
-					candyVal = candy.value,
-					numberVal = number.value;
+				if (producer.value && candy.value && number.value) {
+					var producerVal = producer.value,
+						candyVal = candy.value,
+						numberVal = number.value;
 
-				var tr = document.createElement('tr');
+					var tr = document.createElement('tr');
 
-				tr.innerHTML = `<td>${producerVal}</td><td>${candyVal}</td><td>${numberVal}</td>`;
-				table.insertBefore(tr, row);
+					tr.innerHTML = `<td>${producerVal}</td><td>${candyVal}</td><td>${numberVal}</td>`;
+					table.insertBefore(tr, row);
 
-				obj = {
-					producer: producerVal,
-					candy: candyVal,
-					number: numberVal
+					obj = {
+						producer: producerVal,
+						candy: candyVal,
+						number: numberVal
+					}
+
+					candyArr.push(obj);
+					jsArr.value = JSON.stringify(candyArr);
+
+					producer.value = '';
+					candy.value = '';
+					number.value = '';
+				} else {
+					var purchase = document.querySelector('.section-right'),
+						error = document.createElement('div');
+
+					error.innerHTML = `Все поля должны быть заполнены!`;
+					error.className = 'table-error';
+
+					purchase.appendChild(error);
+
+					setInterval(function(){
+						purchase.removeChild(error);
+					}, 3000);
 				}
-
-				candyArr.push(obj);
-				jsArr.value = JSON.stringify(candyArr);
-
-				producer.value = '';
-				candy.value = '';
-				number.value = '';
 			})
 		}
 	}

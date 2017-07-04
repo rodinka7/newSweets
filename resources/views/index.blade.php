@@ -240,17 +240,6 @@
 						</div>
 						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
 					</div>
-					</div>
-					<div class="caption">
-						<div class="product-price">
-							<span class="price-new">68 грн</span> 
-							<span class="price-old">74 грн</span>
-						</div>
-						<div class="product-name">
-							<a href="">Подарок Паровозик</a>
-						</div>
-						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
-					</div>
 					<div class="product-cart">
 						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
 						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
@@ -303,17 +292,6 @@
 						<a class="box-image-link" href="">
 							<img class="box-img" src="/img/presents/11.png" alt="">	
 						</a>
-					</div>
-					<div class="caption">
-						<div class="product-price">
-							<span class="price-new">68 грн</span> 
-							<span class="price-old">74 грн</span>
-						</div>
-						<div class="product-name">
-							<a href="">Подарок Паровозик</a>
-						</div>
-						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
-					</div>
 					</div>
 					<div class="caption">
 						<div class="product-price">

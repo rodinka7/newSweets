@@ -7,17 +7,27 @@
 			<li><a href="">Создание товара</a></li>
 		</ul>
 	</div>
-	<form action="/admin/create/product" method="post">
+	<form action="/admin/create/product" method="post" enctype="multipart/form-data">
 		{{ csrf_field() }}
 		<div class="zoom-container">
 			Загрузить изображение:
 			<input type="file" value="Добавить изображение" name="img">
+			@if ($errors->has('img'))
+	            <span class="help-block">
+	                <strong>{{ $errors->first('img') }}</strong>
+	            </span>
+	        @endif
 		</div>
 		<div class="section-left">
 			<div class="section-left-header">
 				<div class="form-group">
 					<input type="text" placeholder="Название товара" name="name">
 				</div>
+				@if ($errors->has('name'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('name') }}</strong>
+                    </span>
+                @endif
 			</div>
 			<div class="section-left-info">
 				<div class="product-info">
@@ -28,6 +38,11 @@
 						</div>					
 					</span>
 				</div>
+				@if ($errors->has('weight'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('weight') }}</strong>
+                    </span>
+                @endif
 				<div class="product-info">
 					<span class="product-info-1">Артикул:</span>
 					<span class="product-info-2">				
@@ -36,6 +51,11 @@
 						</div>					
 					</span>
 				</div>
+				@if ($errors->has('articul'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('articul') }}</strong>
+                    </span>
+                @endif
 				<div class="product-info">
 					<span class="product-info-1">Количество конфет:</span>
 					<span class="product-info-2">				
@@ -44,17 +64,32 @@
 						</div>					
 					</span>
 				</div>
+				@if ($errors->has('candies'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('candies') }}</strong>
+                    </span>
+                @endif
 				<div class="product-price">
 					<span class="price-new">					
 						<div class="form-group">
 							<input type="text" name="priceNew" placeholder="Введите новую цену"> грн
 						</div>					
 					</span> 
+					@if ($errors->has('priceNew'))
+	                    <span class="help-block">
+	                        <strong>{{ $errors->first('priceNew') }}</strong>
+	                    </span>
+	                @endif
 					<span class="price-old">					
 						<div class="form-group">
 							<input type="text" name="priceOld" placeholder="Введите старую цену"> грн
 						</div>					
 					</span>
+					@if ($errors->has('priceOld'))
+	                    <span class="help-block">
+	                        <strong>{{ $errors->first('priceOld') }}</strong>
+	                    </span>
+	                @endif
 				</div>
 				<div class="form-group create-label">
 					<label>
@@ -65,6 +100,11 @@
 						</select>
 					</label>					
 				</div>
+				@if ($errors->has('category'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('category') }}</strong>
+                    </span>
+                @endif
 				<div class="purchase">
 					<button class="quentity-btn" type="submit">Сохранить</button>
 				</div>
