@@ -103,7 +103,7 @@
 
 	cursor: pointer;
 
-	font: 12px 'open_sansbold', arial;
+	font: 12px 'open_sanslight', arial;
 	transition: .3s ease;
 }
 .quentity-btn:hover {

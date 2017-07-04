@@ -17,6 +17,8 @@
     <link href="/css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/catalog.css">
     <link rel="stylesheet" href="/css/product.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/admin/product.css">
     <link rel="stylesheet" type="text/css" href="/css/about.css">
 
     <!-- Scripts -->

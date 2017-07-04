@@ -1,0 +1,71 @@
+/* Блок слева */
+.account-box {
+	padding: 30px;
+	border: 1px solid #efefef;
+    border-top: 2px solid #2e3338;
+
+    width: 43%;
+    float: left;
+}
+.account-box ul {
+	margin-bottom: 30px;
+}
+.account-box li {
+	margin: 10px 0;
+    color: #e74c3c;
+    text-transform: uppercase;
+}
+
+.account-box li:before {
+	content: '\f00c';
+    margin: 0 7px 0 0;
+    font: 14px 'FontAwesome';
+    color: #2e3338;
+}
+.account-box h4,
+.login-box h4 {
+	color: #2e3338;
+	text-transform: uppercase;
+	font: 16px 'open-sanslight', arial;
+}
+.account-box p {
+	color: #BCC2D3;
+	font: 12px 'open_sanslight',arial;
+}
+/* Блок слева */
+/* Логин */
+.login-box {
+	padding: 30px;
+	border: 1px solid #efefef;
+    border-top: 2px solid #2e3338;
+
+    width: 43%;
+    float: right;
+}
+.login-btn {
+	color: #bcbcbc;
+	font: 12px 'open_sanslight', arial;
+
+	transition: .3s ease;
+	margin-left: 20px;
+
+	vertical-align: baseline;
+	line-height: 35px;
+}
+.login-btn:hover {
+	color: #e74c3c;
+}
+.login-box label {
+	color: #BCC2D3;
+	font: 14px 'open_sanslight',arial;
+
+	display: inline-block;
+	margin-bottom: 10px;
+}
+.login-box input {
+	padding: 6px;
+	width: 100%;
+
+	margin-bottom: 20px;
+}
+/* Логин */

@@ -24,6 +24,7 @@ a {
 	position: relative;
 	overflow: hidden;
 }
+
 /* Верхнее меню */
 .top-menu {
 	position: absolute;
@@ -172,6 +173,7 @@ a {
 	color: #fff;
 }
 /* Главное меню */
+
 /* Стрелка */
 .arrow-wrapper {
 	position: fixed;
@@ -202,6 +204,7 @@ a {
 	color: #e74c3c;
 }
 /* Стрелка */
+
 /* Контент */
 
 /* Первый контейнер */
@@ -209,34 +212,33 @@ a {
 	position: relative;	
 	overflow: hidden;
 }
-.content-bg-1 {
+.content-bg {
 	min-height: 600px;
+
+	background-size: cover;
+	background-position: 0 20%;
+	background-repeat: no-repeat;
+
+	transition: .3s ease-out;
+}
+.js-bg-1 {
 	background-image: url('../img/bgnew.jpg');
-	background-size: cover;
-	background-position: 0 70%;
-	background-repeat: no-repeat;
 }
-.content-bg-2 {
-	min-height: 600px;
+.js-bg-2 {
 	background-image: url('../img/candynew.jpg');
-	background-size: cover;
-	background-position: 0 70%;
-	background-repeat: no-repeat;
 }
-.content-bg-3 {
-	min-height: 600px;
+.js-bg-3 {
 	background-image: url('../img/giftnew.jpg');
-	background-size: cover;
-	background-position: 0 70%;
-	background-repeat: no-repeat;
 }
 .content-header {
 	position: absolute;
-	top: 25%;
+	top: 20%;
 	left: 0;
 
 	text-align: center;
 	width: 100%;
+
+	transition: .3s ease-out;
 }
 .content-header h2 {
 	color: #f2e85c;
@@ -335,6 +337,7 @@ a {
 
 	display: inline-block;
 }
+
 .js-banner {
 	opacity: 0;
 	transition: .7s ease-in-out;
@@ -349,6 +352,7 @@ a {
 	transition: 1s linear;
 	opacity: 0;
 }
+
 .banner-link {
 	overflow: hidden;
 	border-radius: 50%;
@@ -471,6 +475,7 @@ a {
 	left: 0;
 }
 /* Второй контейнер */
+
 /* Третий контейнер */
 .cart-link.violet:after {
 	content: '';
@@ -559,6 +564,17 @@ a {
 
 	overflow: hidden;
 }
+.box-content {
+	display: flex;
+	justify-content: space-between;
+
+	padding: 20px 0;
+}
+.box-product {
+	width: 200px;
+	margin-bottom: 20px;
+	padding: 0 20px;
+}
 .box-image {
 	margin-bottom: 10px;
 }
@@ -567,8 +583,11 @@ a {
 	overflow: hidden;
 }
 .box-img {
-	width: 220px;
+	width: 200px;
 	transition: .3s ease;
+
+	display: block;
+	margin: auto;
 }
 .box-image-link:hover .box-img {
 	transform: scale(1.1);
@@ -643,6 +662,7 @@ a {
 .box-controls {
 	margin-top: -15px;
 }
+
 .product-prev, .product-next {
 	display: block;
 	width: 30px;
@@ -676,6 +696,17 @@ a {
     color: #fff;
 
     content: '\f105';
+}
+.js-product {
+	opacity: 0;
+	transition: .7s ease-out;
+}
+.slider {
+	overflow: hidden;
+}
+.js-slider-up,
+.js-slider-down {
+	transition: .5s ease-out;
 }
 /* Шестой контейнер */
 

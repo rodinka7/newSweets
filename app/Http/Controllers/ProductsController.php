@@ -6,15 +6,15 @@ use Illuminate\Http\Request;
 
 class ProductsController extends Controller
 {
-    public function catalogShow(){
+    public function storeCatalog(){
     	return view('catalog');
     }
 
-    public function productShow(){
+    public function storeProduct(){
     	return view('product');
     }
 
-    public function aboutShow(){
+    public function storeAbout(){
     	return view('about');
     }
 }

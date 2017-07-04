@@ -2,7 +2,7 @@
 @section('content')
 <section class="content">
 	<section class="content-main">
-		<div class="content-bg-1 js-bg-1">
+		<div class="content-bg js-bg-1">
 			<div class="content-header js-header-1">
 				<h2>Новогодние сладкие подарки</h2>
 				<h1>2018</h1>
@@ -14,7 +14,7 @@
 		</div>
 	</section>
 </section>
-<section class="content js-content-1">
+<section class="content">
 	<div class="content-second">
 		<div class="content-box">
 			<div class="banner js-banner-left">
@@ -74,7 +74,7 @@
 </section>
 <section class="content">
 	<section class="content-main">
-		<div class="content-bg-2 js-bg-2">
+		<div class="content-bg js-bg-2">
 			<div class="content-header js-header-2">
 				<h2>Новогодние сладкие подарки</h2>
 				<h1>2018</h1>
@@ -86,7 +86,7 @@
 		</div>
 	</section>
 </section>
-<section class="content js-container-2">
+<section class="content">
 	<div class="content-fourth">
 		<div class="content-box">
 			<div class="banner js-banner">
@@ -142,7 +142,7 @@
 </section>
 <section class="content">
 	<section class="content-main">
-		<div class="content-bg-3 js-bg-3">
+		<div class="content-bg js-bg-3">
 			<div class="content-header js-header-3">
 				<h2>Новогодние сладкие подарки</h2>
 				<h1>2018</h1>
@@ -154,7 +154,7 @@
 		</div>
 	</section>
 </section>
-<section class="content js-container-3">
+<section class="content">
 	<div class="content-sixth">
 		<div class="box-heading">
 			<h2>Наши сладкие подарки</h2>
@@ -240,16 +240,6 @@
 						</div>
 						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
 					</div>
-					<div class="product-cart">
-						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
-						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
-					</div>
-				</div>
-				<div class="box-product js-product">
-					<div class="box-image">
-						<a class="box-image-link" href="">
-							<img class="box-img" src="/img/presents/11.png" alt="">	
-						</a>
 					</div>
 					<div class="caption">
 						<div class="product-price">
@@ -292,6 +282,38 @@
 						<a class="box-image-link" href="">
 							<img class="box-img" src="/img/presents/11.png" alt="">	
 						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
+					<div class="product-cart">
+						<button class="product-btn-red"><i class="fa fa-shopping-cart"></i></button>
+						<button class="product-btn-black"><i class="fa fa-search-plus"></i></button>
+					</div>
+				</div>
+				<div class="box-product js-product">
+					<div class="box-image">
+						<a class="box-image-link" href="">
+							<img class="box-img" src="/img/presents/11.png" alt="">	
+						</a>
+					</div>
+					<div class="caption">
+						<div class="product-price">
+							<span class="price-new">68 грн</span> 
+							<span class="price-old">74 грн</span>
+						</div>
+						<div class="product-name">
+							<a href="">Подарок Паровозик</a>
+						</div>
+						<div class="product-desc">Новогодний подарок в элитной упаковке подойдет в качестве корпоративного угощения.</div>
+					</div>
 					</div>
 					<div class="caption">
 						<div class="product-price">
