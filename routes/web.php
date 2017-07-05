@@ -24,6 +24,7 @@ Auth::routes();
 Route:: prefix('/admin')->group(function(){
 	Route::get('/create/product', 'AdminController@storeProduct');
 	Route::post('/create/product', 'AdminController@createProduct');
+	Route::get('/edit/product/{id}', 'AdminController@editProduct');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

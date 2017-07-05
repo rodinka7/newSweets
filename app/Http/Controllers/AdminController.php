@@ -66,4 +66,21 @@ class AdminController extends Controller
             $candy->save();
         }
     }
+
+    public function editProduct($id){
+        $data = [];
+        $product = Product::find($id);
+        $candies = Candy::where("product_id", $id)->get();
+    
+        $data['name'] = $product['name'];
+        $data['weight'] = $product['weight'];
+        $data['articul'] = $product['articul'];
+        $data['number'] = $product['candies'];
+        $data['newprice'] = $product['newprice'];
+        $data['oldprice'] = $product['oldprice'];
+        $data['img'] = $product['img'];
+        $data['candies'] = $candies;
+
+        return view('admin.edit.product', $data);
+    }
 }
