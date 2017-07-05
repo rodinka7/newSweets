@@ -5,9 +5,12 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
-{
-    $this->belongsTo('App\Category');
-    $this->hasMany('App\Candy');
-    
-    return $this;
+{    
+    public function category(){
+    	return $this->belongsTo('App\Category');
+    }
+
+    public function candies() {
+    	return $this->hasMany('App\Candy');
+    }
 }

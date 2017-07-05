@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use Intervention\Image\ImageManagerStatic as Image;
+use App\Product;
+use App\Candy;
 
 class AdminController extends Controller
 {
@@ -42,7 +44,26 @@ class AdminController extends Controller
 
         $img->save($path);
 
-        redirect();
+        $arr = json_decode($hidden, true);
+        
+        $product = new Product();
+        $product->img = $_FILES['img']['name'];
+        $product->name = $name;
+        $product->weight = $weight;
+        $product->articul = $articul;
+        $product->candies = $candies;
+        $product->newprice = $priceNew;
+        $product->oldprice = $priceOld;
+        $product->category_id = $category;
+        $product->save();
 
+        foreach ($arr as $item) {
+            $candy = new Candy();
+            $candy->producer = $item['producer'];
+            $candy->name = $item['candy'];
+            $candy->number = $item['number'];
+            $candy->product_id = $product->id;
+            $candy->save();
+        }
     }
 }
