@@ -100,11 +100,6 @@
 						</select>
 					</label>					
 				</div>
-				@if ($errors->has('category'))
-                    <span class="help-block">
-                        <strong>{{ $errors->first('category') }}</strong>
-                    </span>
-                @endif
 				<div class="purchase">
 					<button class="quentity-btn" type="submit">Сохранить</button>
 				</div>

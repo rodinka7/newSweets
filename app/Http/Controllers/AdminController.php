@@ -25,6 +25,7 @@ class AdminController extends Controller
             'priceOld' => 'required|numeric',
             'category' => 'required'
         ]);
+
     	$name = $request->input('name');
     	$weight = $request->input('weight');
     	$articul = $request->input('articul');
@@ -65,13 +66,16 @@ class AdminController extends Controller
             $candy->product_id = $product->id;
             $candy->save();
         }
+
+        return redirect('/admin/edit/product/'.$product->id);
     }
 
     public function editProduct($id){
         $data = [];
         $product = Product::find($id);
         $candies = Candy::where("product_id", $id)->get();
-    
+        
+        $data['id'] = $product['id'];
         $data['name'] = $product['name'];
         $data['weight'] = $product['weight'];
         $data['articul'] = $product['articul'];
@@ -82,5 +86,70 @@ class AdminController extends Controller
         $data['candies'] = $candies;
 
         return view('admin.edit.product', $data);
+    }
+
+    public function updateProduct(Request $request, $id){
+        $this->validate($request, [
+            'img' => 'image',
+            'name' => 'required|min:5',
+            'weight' => 'required|numeric',
+            'articul' => 'required|alpha_dash',
+            'candies' => 'required|numeric',
+            'priceNew' => 'required|numeric',
+            'priceOld' => 'required|numeric',
+            'category' => 'required'
+        ]);
+
+        $name = $request->input('name');
+        $weight = $request->input('weight');
+        $articul = $request->input('articul');
+        $candies = $request->input('candies');
+        $priceNew = $request->input('priceNew');
+        $priceOld = $request->input('priceOld');
+        $category = $request->input('category');
+        $hidden = $request->input('hidden');
+
+        if (!empty($_FILES['img']['tmp_name'])) {
+            $img = Image::make($_FILES['img']['tmp_name']);
+
+            $img->resize(500, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });
+
+            $path = public_path('img/presents/'.$_FILES['img']['name']);
+
+            $img->save($path);
+        }
+       
+        $product = Product::find($id);
+        $product->name = $name;
+        $product->weight = $weight;
+        $product->articul = $articul;
+        $product->candies = $candies;
+        $product->newprice = $priceNew;
+        $product->oldprice = $priceOld;
+        $product->category_id = $category;
+
+        if (!empty($_FILES['img']['name'])) {
+            $product->img = $_FILES['img']['name'];
+        }
+
+        $product->save();
+
+        $arr = json_decode($hidden, true);
+        $candyall = Candy::where('product_id', $id)->get();
+        
+               
+        foreach ($arr as $item) {
+            $candy = Candy::where('product_id', $id)->get();
+
+            $candy->producer = $item['producer'];
+            $candy->name = $item['candy'];
+            $candy->number = $item['number'];
+            $candy->product_id = $product->id;
+            $candy->save();
+        }
+
+        return redirect('/admin/edit/product/'.$product->id);
     }
 }
