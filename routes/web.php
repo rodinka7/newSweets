@@ -26,6 +26,7 @@ Route:: prefix('/admin')->group(function(){
 	Route::post('/create/product', 'AdminController@createProduct');
 	Route::get('/edit/product/{id}', 'AdminController@editProduct');
 	Route::post('/edit/product/{id}', 'AdminController@updateProduct');
+	Route::get('/create/category', 'AdminController@createCategory');
 });
 
 Route::get('/home', 'HomeController@index')->name('home');

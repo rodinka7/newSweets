@@ -136,20 +136,32 @@ class AdminController extends Controller
 
         $product->save();
 
-        $arr = json_decode($hidden, true);
-        $candyall = Candy::where('product_id', $id)->get();
-        
+        $arr = json_decode($hidden, true);        
                
         foreach ($arr as $item) {
-            $candy = Candy::where('product_id', $id)->get();
 
-            $candy->producer = $item['producer'];
-            $candy->name = $item['candy'];
-            $candy->number = $item['number'];
-            $candy->product_id = $product->id;
-            $candy->save();
+            $candy = Candy::where('name', $item['name'])
+                    ->where('product_id', $product->id)->first();
+
+            if (!empty($candy)) {
+                $candy->producer = $item['producer'];
+                $candy->name = $item['name'];
+                $candy->number = $item['number'];
+                $candy->save();
+            } else {
+                $newCandy = new Candy();
+                $newCandy->producer = $item['producer'];
+                $newCandy->name = $item['name'];
+                $newCandy->number = $item['number'];
+                $newCandy->product_id = $product->id;
+                $newCandy->save();
+            }
         }
 
         return redirect('/admin/edit/product/'.$product->id);
+    }
+
+    public function createCategory() {
+        return view('admin.create.category');
     }
 }
