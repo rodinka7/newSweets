@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Intervention\Image\ImageManagerStatic as Image;
 use App\Product;
 use App\Candy;
+use App\Category;
 
 class AdminController extends Controller
 {
@@ -161,7 +162,86 @@ class AdminController extends Controller
         return redirect('/admin/edit/product/'.$product->id);
     }
 
-    public function createCategory() {
+    public function storeCategory() {
         return view('admin.create.category');
+    }
+
+    public function createCategory(Request $request) {
+        $this->validate($request, [
+            'img' => 'required|image',
+            'name' => 'required|min:5',
+            'description' => 'required|min:5'
+        ]);
+
+        $name = $request->input('name');
+        $description = $request->input('description');
+
+        $img = Image::make($_FILES['img']['tmp_name']);
+
+        $img->resize(500, null, function ($constraint) {
+            $constraint->aspectRatio();
+        });
+
+        $path = public_path('img/presents/'.$_FILES['img']['name']);
+
+        $img->save($path);
+        
+        $category = new Category();
+        $category->img = $_FILES['img']['name'];
+        $category->name = $name;
+        $category->description = $description;
+        $category->save();
+
+        return redirect('/admin/edit/category/'.$category->id);
+    }
+
+    public function editCategory($id){
+        $data = [];
+
+        $category = Category::find($id);
+        $products = Product::where("category_id", $id)->get();
+        
+        $data['id'] = $category['id'];
+        $data['name'] = $category['name'];
+        $data['description'] = $category['description'];
+        $data['img'] = $category['img'];
+        $data['products'] = $products;
+
+        return view('admin.edit.category', $data);
+    }
+
+    public function updateCategory(Request $request, $id){
+        $this->validate($request, [
+            'img' => 'image',
+            'name' => 'required|min:5',
+            'description' => 'required|min:5'
+        ]);
+
+        $name = $request->input('name');
+        $description = $request->input('description');
+
+        if (!empty($_FILES['img']['tmp_name'])) {
+            $img = Image::make($_FILES['img']['tmp_name']);
+
+            $img->resize(500, null, function ($constraint) {
+                $constraint->aspectRatio();
+            });
+
+            $path = public_path('img/presents/'.$_FILES['img']['name']);
+
+            $img->save($path);
+        }
+       
+        $category = Category::find($id);
+        $category->name = $name;
+        $category->description = $description;
+
+        if (!empty($_FILES['img']['name'])) {
+            $category->img = $_FILES['img']['name'];
+        }
+
+        $category->save();
+
+        return redirect('/admin/edit/category/'.$category->id);
     }
 }
